@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>White Walkers FC</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/all.css">
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+</style>
+
+<!-- Script to run Font Awesome -->
+<script src="https://kit.fontawesome.com/b04f5cf28a.js"></script>
+
+<body class="w3-light-grey">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">TEAM</a> 
+  <a href="#fixtures" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">FIXTURES/RESULTS</a>
+  <a href="#table" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">LEAGUE TABLE</a>  
+  <!--<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT</a>-->
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">WHITE WALKERS FC</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!--Team Logo (to be changed to slideshow-->
+  <div class="w3-center" style="margin-top:83px">
+	<img class="mySlides" src="images/team_logo.jpg" style="width:100%" alt="Team Logo"> 
+	<!--<img class="mySlides" src="images/team_photo.png" style="width:100%" alt="Team Photo" >-->
+  </div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;">
+  
+  <!-- Modal for full size images on click-->
+  <!--<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>-->
+
+	<!--Team Section-->
+	<div class="w3-container w3-padding-32" id="team">
+		<h1 class="w3-center"><b>THE TEAM</b></h1>
+		<!--GK section-->
+		<div class="w3-container">
+			<h3 class="w3-bottombar w3-padding">GOALKEEPERS</h3>
+				<!-- Row 1 -->
+				<div class="w3-row-padding w3-padding-16">
+					<div class="w3-quarter ">
+						<div class="w3-card">
+							<img src="images/player_pic.png" style="width:100%" alt="GK">
+							<div class="container">
+								<h5 class="w3-padding w3-center">Ronald Vassallo</h5>
+							</div>
+						</div>	
+					</div>
+				</div><!-- End row 1 -->	
+		</div>
+		
+		<!--Defenders section-->
+		<div class="w3-container">
+			<h3 class="w3-bottombar w3-padding">DEFENDERS</h3>
+				<!-- Row 1 -->
+				<div class="w3-row-padding w3-padding-16">
+					<div class="w3-quarter">
+						<div class="w3-card">
+							<img src="images/glenn_borg.png" style="width:100%" alt="GK">
+							<div class="container">
+								<h5 class="w3-padding w3-center">Glenn Borg</h5>
+							</div>
+						</div>	
+					</div>
+					<div class="w3-quarter">
+						<div class="w3-card">
+							<img src="images/player_pic.png" style="width:100%" alt="GK">
+							<div class="container">
+								<h5 class="w3-padding w3-center">Luke Hess</h5>
+							</div>
+						</div>	
+					</div>
+					<div class="w3-quarter">
+						<div class="w3-card">
+							<img src="images/player_pic.png" style="width:100%" alt="GK">
+							<div class="container">
+								<h5 class="w3-padding w3-center">Luca Spiteri Monsigneur</h5>
+							</div>
+						</div>	
+					</div>
+					<div class="w3-quarter">
+						<div class="w3-card">
+							<img src="images/player_pic.png" style="width:100%" alt="GK">
+							<div class="container">
+								<h5 class="w3-padding w3-center">Karl Mizzi</h5>
+							</div>
+						</div>	
+					</div>
+				</div><!-- End Row 1 -->
+				
+				<!-- Defenders Row 2-->
+				<div class="w3-row-padding">
+					<div class="w3-quarter">
+						<div class="w3-card">
+							<img src="images/player_pic.png" style="width:100%" alt="GK">
+							<div class="container">
+								<h5 class="w3-padding w3-center">Kurt Tabone</h5>
+							</div>
+						</div>	
+					</div>
+					<!--<div class="w3-quarter">
+						<div class="w3-card">
+							<img src="images/player_pic.png" style="width:100%" alt="GK">
+							<div class="container">
+								<h5 class="w3-padding w3-center">Luke Hess</h5>
+							</div>
+						</div>	
+					</div>
+					<div class="w3-quarter">
+						<div class="w3-card">
+							<img src="images/player_pic.png" style="width:100%" alt="GK">
+							<div class="container">
+								<h5 class="w3-padding w3-center">Luca Spiteri Monsigneur</h5>
+							</div>
+						</div>	
+					</div>
+					<div class="w3-quarter">
+						<div class="w3-card">
+							<img src="images/player_pic.png" style="width:100%" alt="GK">
+							<div class="container">
+								<h5 class="w3-padding w3-center">Karl Mizzi</h5>
+							</div>
+						</div>	
+					</div>-->
+				</div><!-- Def End of row 2-->	
+		</div><!--  Defenders section -->
+		
+		<!--Midfielders section-->
+		<div class="w3-container">
+			<h3 class="w3-bottombar w3-padding">MIDFIELDERS</h3>
+			<!-- Row 1 -->
+			<div class="w3-row-padding w3-padding-16">
+				<div class="w3-quarter">
+					<div class="w3-card">
+						<img src="images/andrew_cremona.png" style="width:100%" alt="GK">
+						<div class="container">
+							<h5 class="w3-padding w3-center">Andrew Cremona</h5>
+						</div>
+					</div>	
+				</div>
+				<div class="w3-quarter">
+					<div class="w3-card">
+						<img src="images/player_pic.png" style="width:100%" alt="GK">
+						<div class="container">
+							<h5 class="w3-padding w3-center">Alex Demarco</h5>
+						</div>
+					</div>	
+				</div>
+				<div class="w3-quarter">
+					<div class="w3-card">
+						<img src="images/player_pic.png" style="width:100%" alt="GK">
+						<div class="container">
+							<h5 class="w3-padding w3-center">Dylan Mintoff</h5>
+						</div>
+					</div>	
+				</div>
+				<div class="w3-quarter">
+					<div class="w3-card">
+						<img src="images/player_pic.png" style="width:100%" alt="GK">
+						<div class="container">
+							<h5 class="w3-padding w3-center">Bernard Aquilina</h5>
+						</div>
+					</div>	
+				</div>
+			</div><!-- End of row 1 -->
+			
+		</div><!-- End of Midfielders section -->	
+		
+		<!--ATTACKERS section-->
+		<div class="w3-container">
+			<h3 class="w3-bottombar w3-padding">ATTACKERS</h3>
+			<!-- Row 1 -->
+			<div class="w3-row-padding w3-padding-16">
+				<div class="w3-quarter">
+					<div class="w3-card">
+						<img src="images/player_pic.png" style="width:100%" alt="GK">
+						<div class="container">
+							<h5 class="w3-padding w3-center">Daniel Calleja Cremona</h5>
+						</div>
+					</div>	
+				</div>
+				<div class="w3-quarter">
+					<div class="w3-card">
+						<img src="images/player_pic.png" style="width:100%" alt="GK">
+						<div class="container">
+							<h5 class="w3-padding w3-center">Aaron Gatt</h5>
+						</div>
+					</div>	
+				</div>
+				<div class="w3-quarter">
+					<div class="w3-card">
+						<img src="images/player_pic.png" style="width:100%" alt="GK">
+						<div class="container">
+							<h5 class="w3-padding w3-center">Jonathan Mifsud</h5>
+						</div>
+					</div>	
+				</div>
+				<div class="w3-quarter">
+					<div class="w3-card">
+						<img src="images/player_pic.png" style="width:100%" alt="GK">
+						<div class="container">
+							<h5 class="w3-padding w3-center">Ryan Aguis</h5>
+						</div>
+					</div>	
+				</div>
+			</div><!--End of Attackers row 1 -->
+		</div><!--End of Attackers section -->
+		
+	</div><!--End Team container Div-->
+	
+	<div class="w3-padding">
+		<img src="images/team_photo.jpg" style="width:100%" alt="Team Photo" >
+	</div>
+
+
+  <!-- Fixtures/Results section -->
+  <div class="w3-container w3-center w3-padding-32" id="fixtures">
+	<h2><b>FIXTURES/RESULTS</b></h2>
+    
+	<!--First Row-->
+	<div class="w3-container w3-row-padding w3-padding-16">
+		<!-- Start of Fixture card 1 -->
+		<div class="w3-third w3-padding">
+			<div class="w3-card w3-container w3-padding">
+				<!-- Game Details date/time-->
+				<h6>S.F.A.L League Game</h6>
+				<h6>Thusday 12th September 2019</h6>
+				<h6 class="w3-small">9:10PM</h6>
+				<!-- Large/Medium view -->
+				<div class="w3-container w3-row w3-hide-small">
+					<!-- Team A logo & name-->
+					<div class="w3-third w3-center">
+						<img src="images/Southampton1505465019002.png" style="width:100%" class="w3-hide-small" alt="Mighty Reds FC" />
+						<span>Mighty Reds FC</span>
+						<ul class="w3-small w3-margin-top">
+							<li>Bonnici <span class="fas fa-futbol"></span></li>
+							<li></li>
+						</ul>	
+					</div>
+					<!-- Score -->
+					<div class="w3-third">
+						<h1 class="w3-hide-small" style="font-size: 3vw;"><b>1-4</b></h1>
+						<h1 class="w3-hide-medium w3-hide-large w3-margin-bottom"><b>1-4</b></h1>
+					</div>
+					<!-- Team B logo & name-->
+					<div class="w3-third">
+						<img src="images/team_logo180x180.png" style="width:100%" class="w3-hide-small" alt="White Walkers FC" />
+						<span>White Walkers FC</span>
+						<ul class="w3-small w3-padding-16">
+							<li>Borg <span class="fas fa-futbol"></span></li>
+							<li>Cremona <span class="fas fa-futbol"></span> <span class="fas fa-futbol"></span></li>
+							<li>Mifsud <span class="fas fa-futbol"></span></li>
+							<li>Hess <span class="fas fa-circle" style="color: yellow;"></span></li>
+							<li>Vassallo <span class="fas fa-circle" style="color: yellow;"></span></li>
+						</ul>	
+					</div>
+				</div>
+				
+				<!-- Mobil view -->
+					<div class="w3-hide-large w3-hide-medium">
+						<h6>Mighty Reds FC <b>1-4</b> White Walkers FC</h6>
+						<ul class="w3-small w3-left padding-left">
+							<li>Bonnici <span class="fas fa-futbol"></span></li>
+							<li></li>
+						</ul>
+						<ul class="w3-small w3-right padding-right ">
+							<li>Borg <span class="fas fa-futbol"></span></li>
+							<li>Cremona <span class="fas fa-futbol"></span> <span class="fas fa-futbol"></span></li>
+							<li>Mifsud <span class="fas fa-futbol"></span></li>
+							<li>Hess <span class="fas fa-circle" style="color: yellow;"></span></li>
+							<li>Vassallo <span class="fas fa-circle" style="color: yellow;"></span></li>
+						</ul>
+						
+					</div>
+				
+			</div>
+		</div> 
+		<!-- Start of Fixture card 2 -->
+		<div class="w3-third w3-padding">
+			<div class="w3-card w3-container w3-white">
+				<!-- Game Details date/time-->
+				<h6>S.F.A.L League Game</h6>
+				<h6>Thusday 19th September 2019</h6>
+				<h6 class="w3-small">8:00PM</h6>
+				<div class="w3-container w3-row">
+					<!-- Team A logo & name-->
+					<div class="w3-third">
+						<img src="images/team_logo180x180.png" style="width:100%" alt="White Walkers FC" />
+						<span>White Walkers FC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+					<!-- Score -->
+					<div class="w3-third w3-center">
+						<h1 style="font-size: 3vw;">VS</h1>
+					</div>
+					<!-- Team B logo & name-->
+					<div class="w3-third">
+						<img src="images/mighty_reds_fc.jpg" style="width:100%" alt="Filfla Lizards" />
+						<span>Fifla Lizards</span>
+						<ul class="w3-small w3-padding-16">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Start of Fixture card 3 -->
+		<div class="w3-third w3-padding">
+			<div class="w3-card w3-container">
+				<!-- Game Details date/time-->
+				<h6>S.F.A.L League Game</h6>
+				<h6>Thusday 3rd October 2019</h6>
+				<h6 class="w3-small">9:10PM</h6>
+				<div class="w3-container w3-row">
+					<!-- Team A logo & name-->
+					<div class="w3-third">
+						<img src="images/Southampton1505465019002.png" style="width:100%" alt="La Famiglia AFC" /><br />
+						<span>La Famiglia AFC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+					<!-- Score -->
+					<div class="w3-third w3-center">
+						<h1 style="font-size: 3vw;">VS</h1>
+					</div>
+					<!-- Team B logo & name-->
+					<div class="w3-third">
+						<img src="images/team_logo180x180.png" style="width:100%" alt="White Walkers FC" />
+						<span>White Walkers FC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of fixture card 3 -->
+	</div>
+	<!--End of Row 1 -->
+	
+	<!--Start Row 2 -->
+	<div class="w3-container w3-row-padding w3-margin-bottom">
+		<!-- Start of Fixture card 4 -->
+		<div class="w3-third w3-padding">
+			<div class="w3-card w3-container w3-white">
+				<!-- Game Details date/time-->
+				<h6>S.F.A.L League Game</h6>
+				<h6>Thusday 17th October 2019</h6>
+				<h6 class="w3-small">8:00PM</h6>
+				<div class="w3-container w3-row">
+					<!-- Team A logo & name-->
+					<div class="w3-third">
+						<img src="images/Southampton1505465019002.png" style="width:100%" alt="Versity AFC" /><br />
+						<span>Versity AFC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+					<!-- Score -->
+					<div class="w3-third w3-center">
+						<h1 style="font-size: 3vw;">VS</h1>
+					</div>
+					<!-- Team B logo & name-->
+					<div class="w3-third">
+						<img src="images/team_logo180x180.png" style="width:100%" alt="White Walkers FC" />
+						<span>White Walkers FC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Start of Fixture card 5 -->
+		<div class="w3-third w3-padding">
+			<div class="w3-card w3-container">
+				<!-- Game Details date/time-->
+				<h6>S.F.A.L League Game</h6>
+				<h6>Thusday 7th November 2019</h6>
+				<h6 class="w3-small">8:00PM</h6>
+				<div class="w3-container w3-row">
+					<!-- Team A logo & name-->
+					<div class="w3-third">
+						<img src="images/team_logo180x180.png" style="width:100%" alt="White Walkers FC" />
+						<span>White Walkers FC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+					<!-- Score -->
+					<div class="w3-third w3-center">
+						<h1 style="font-size: 3vw;">VS</h1>
+					</div>
+					<!-- Team B logo & name-->
+					<div class="w3-third">
+						<img src="images/Manchester_United_Crest_Comp_180x1801550591475296.png" style="width:100%" alt="Ex Team" />
+						<span>Ex Team</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Start of Fixture card 6 -->
+		<div class="w3-third w3-padding">
+			<div class="w3-card w3-container w3-white">
+				<!-- Game Details date/time-->
+				<h6>S.F.A.L League Game</h6>
+				<h6>Thusday 21st November 2019</h6>
+				<h6 class="w3-small">9:10PM</h6>
+				<div class="w3-container w3-row">
+					<!-- Team A logo & name-->
+					<div class="w3-third">
+						<img src="images/Southampton1505465019002.png" style="width:100%" alt="Golden Lions FC" /><br />
+						<span>Golden Lions FC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+					<!-- Score -->
+					<div class="w3-third w3-center">
+						<h1 style="font-size: 3vw;">VS</h1>
+					</div>
+					<!-- Team B logo & name-->
+					<div class="w3-third">
+						<img src="images/team_logo180x180.png" style="width:100%" alt="White Walkers FC" />
+						<span>White Walkers FC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of fixture card 6 -->
+	</div>
+	<!-- End of Row 2 -->
+	
+	<!--Start Row 3 -->
+	<div class="w3-container w3-row-padding w3-margin-bottom">
+		<!-- Start of Fixture card 7 -->
+		<div class="w3-third w3-padding">
+			<div class="w3-card w3-container">
+				<!-- Game Details date/time-->
+				<h6>S.F.A.L League Game</h6>
+				<h6>Thusday 5th December 2019</h6>
+				<h6 class="w3-small">9:10PM</h6>
+				<div class="w3-container w3-row">
+					<!-- Team A logo & name-->
+					<div class="w3-third">
+						<img src="images/Southampton1505465019002.png" style="width:100%" alt="Sunrise FC" /><br />
+						<span>Sunrise FC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+					<!-- Score -->
+					<div class="w3-third w3-center">
+						<h1 style="font-size: 3vw;">VS</h1>
+					</div>
+					<!-- Team B logo & name-->
+					<div class="w3-third">
+						<img src="images/team_logo180x180.png" style="width:100%" alt="White Walkers FC" />
+						<span>White Walkers FC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Start of Fixture card 8 -->
+		<div class="w3-third w3-padding">
+			<div class="w3-card w3-container w3-white">
+				<!-- Game Details date/time-->
+				<h6>S.F.A.L League Game</h6>
+				<h6>Thusday 16th January 2020</h6>
+				<h6 class="w3-small">8:00PM</h6>
+				<div class="w3-container w3-row">
+					<!-- Team A logo & name-->
+					<div class="w3-third">
+						<img src="images/team_logo180x180.png" style="width:100%" alt="White Walkers FC" />
+						<span>White Walkers FC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+					<!-- Score -->
+					<div class="w3-third w3-center">
+						<h1 style="font-size: 3vw;">VS</h1>
+					</div>
+					<!-- Team B logo & name-->
+					<div class="w3-third">
+						<img src="images/Manchester_United_Crest_Comp_180x1801550591475296.png" style="width:100%" alt="Mighty Reds FC" />
+						<span>Mighty Reds FC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Start of Fixture card 9 -->
+		<div class="w3-third w3-padding">
+			<div class="w3-card w3-container">
+				<!-- Game Details date/time-->
+				<h6>S.F.A.L League Game</h6>
+				<h6>Thusday 23rd January 2020</h6>
+				<h6 class="w3-small">8:00PM</h6>
+				<div class="w3-container w3-row">
+					<!-- Team A logo & name-->
+					<div class="w3-third">
+						<img src="images/Southampton1505465019002.png" style="width:100%" alt="Filfla Lizards" /><br />
+						<span>Filfla Lizards</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+					<!-- Score -->
+					<div class="w3-third w3-center">
+						<h1 style="font-size: 3vw;">VS</h1>
+					</div>
+					<!-- Team B logo & name-->
+					<div class="w3-third">
+						<img src="images/team_logo180x180.png" style="width:100%" alt="White Walkers FC" />
+						<span>White Walkers FC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of fixture card 9 -->
+	</div>
+	<!-- End of Row 3 -->
+	
+	<!--Start Row 4 -->
+	<div class="w3-container w3-row-padding w3-margin-bottom">
+		<!-- Start of Fixture card 10 -->
+		<div class="w3-third w3-padding">
+			<div class="w3-card w3-container w3-white">
+				<!-- Game Details date/time-->
+				<h6>S.F.A.L League Game</h6>
+				<h6>Thusday 6th February 2020</h6>
+				<h6 class="w3-small">9:10PM</h6>
+				<div class="w3-container w3-row">
+					<!-- Team A logo & name-->
+					<div class="w3-third">
+						<img src="images/team_logo180x180.png" style="width:100%" alt="White Walkers FC" />
+						<span>White Walkers FC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+					<!-- Score -->
+					<div class="w3-third w3-center">
+						<h1 style="font-size: 3vw;">VS</h1>
+					</div>
+					<!-- Team B logo & name-->
+					<div class="w3-third">
+						<img src="images/Southampton1505465019002.png" style="width:100%" alt="La Famiglia AFC" /><br />
+						<span>la Famiglia AFC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Start of Fixture card 11 -->
+		<div class="w3-third w3-padding">
+			<div class="w3-card w3-container">
+				<!-- Game Details date/time-->
+				<h6>S.F.A.L League Game</h6>
+				<h6>Thusday 20th February 2020</h6>
+				<h6 class="w3-small">8:00PM</h6>
+				<div class="w3-container w3-row">
+					<!-- Team A logo & name-->
+					<div class="w3-third">
+						<img src="images/team_logo180x180.png" style="width:100%" alt="White Walkers FC" />
+						<span>White Walkers FC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+					<!-- Score -->
+					<div class="w3-third w3-center">
+						<h1 style="font-size: 3vw;">VS</h1>
+					</div>
+					<!-- Team B logo & name-->
+					<div class="w3-third">
+						<img src="images/Manchester_United_Crest_Comp_180x1801550591475296.png" style="width:100%" alt="Versity AFC" />
+						<span>Versity AFC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Start of Fixture card 12 -->
+		<div class="w3-third w3-padding">
+			<div class="w3-card w3-container w3-white">
+				<!-- Game Details date/time-->
+				<h6>S.F.A.L League Game</h6>
+				<h6>Thusday 12th March 2020</h6>
+				<h6 class="w3-small">8:00PM</h6>
+				<div class="w3-container w3-row">
+					<!-- Team A logo & name-->
+					<div class="w3-third">
+						<img src="images/Southampton1505465019002.png" style="width:100%" alt="Ex Team" /><br />
+						<span>Ex Team</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+					<!-- Score -->
+					<div class="w3-third w3-center">
+						<h1 style="font-size: 3vw;">VS</h1>
+					</div>
+					<!-- Team B logo & name-->
+					<div class="w3-third">
+						<img src="images/team_logo180x180.png" style="width:100%" alt="White Walkers FC" />
+						<span>White Walkers FC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of fixture card 12 -->
+	</div>
+	<!-- End of Row 4 -->
+	
+	<!--Start Row 5 -->
+	<div class="w3-container w3-row-padding w3-margin-bottom">
+		<!-- Start of Fixture card 13 -->
+		<div class="w3-third w3-padding">
+			<div class="w3-card w3-container">
+				<!-- Game Details date/time-->
+				<h6>S.F.A.L League Game</h6>
+				<h6>Thusday 26th March 2020</h6>
+				<h6 class="w3-small">8:00PM</h6>
+				<div class="w3-container w3-row">
+					<!-- Team A logo & name-->
+					<div class="w3-third">
+						<img src="images/team_logo180x180.png" style="width:100%" alt="White Walkers FC" />
+						<span>White Walkers FC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+					<!-- Score -->
+					<div class="w3-third w3-center">
+						<h1 style="font-size: 3vw;">VS</h1>
+					</div>
+					<!-- Team B logo & name-->
+					<div class="w3-third">
+						<img src="images/Southampton1505465019002.png" style="width:100%" alt="Golden Lions FC" /><br />
+						<span>Golden Lions FC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Start of Fixture card 14 -->
+		<div class="w3-third w3-padding">
+			<div class="w3-card w3-container w3-white">
+				<!-- Game Details date/time-->
+				<h6>S.F.A.L League Game</h6>
+				<h6>Thusday 16th April 2020</h6>
+				<h6 class="w3-small">9:10PM</h6>
+				<div class="w3-container w3-row">
+					<!-- Team A logo & name-->
+					<div class="w3-third">
+						<img src="images/team_logo180x180.png" style="width:100%" alt="White Walkers FC" />
+						<span>White Walkers FC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+					<!-- Score -->
+					<div class="w3-third w3-center">
+						<h1 style="font-size: 3vw;">VS</h1>
+					</div>
+					<!-- Team B logo & name-->
+					<div class="w3-third">
+						<img src="images/Manchester_United_Crest_Comp_180x1801550591475296.png" style="width:100%" alt="Sunrise FC" />
+						<span>Sunrise FC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Start of Fixture card 15 -->
+		<!--<div class="w3-third w3-padding">
+			<div class="w3-card w3-container">
+				<!-- Game Details date/time-->
+				<!--<h6>S.F.A.L League Game</h6>
+				<h6>Thusday 12th March 2020</h6>
+				<h6 class="w3-small">8:00PM</h6>
+				<div class="w3-container w3-row">
+					<!-- Team A logo & name-->
+					<!--<div class="w3-third">
+						<img src="images/Southampton1505465019002.png" style="width:100%" alt="Ex Team" /><br />
+						<span>Ex Team</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+					<!-- Score -->
+					<!--<div class="w3-third w3-center">
+						<h1 style="font-size: 3vw;">VS</h1>
+					</div>
+					<!-- Team B logo & name-->
+					<!--<div class="w3-third">
+						<img src="images/team_logo180x180.png" style="width:100%" alt="White Walkers FC" />
+						<span>White Walkers FC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of fixture card 15 -->
+	</div>
+	<!-- End of Row 5 -->
+	
+	<!--Mobil testing First Row-->
+	<div class="w3-container w3-row-padding w3-padding-16">
+		<!-- Start of Fixture card 1 -->
+		<div class="w3-third w3-padding">
+			<div class="w3-card w3-container w3-padding">
+				<!-- Game Details date/time-->
+				<h6>S.F.A.L League Game</h6>
+				<h6>Thusday 12th September 2019</h6>
+				<h6 class="w3-small">9:10PM</h6>
+				<div>
+					<!-- Mobil view -->
+					<div>
+						<h6 class="w3-hide-medium w3-hide-large">Mighty Reds FC <b>1-4</b> White Walkers FC</h6>
+						<ul class="w3-small w3-margin-top w3-left w3-margin-left">
+							<li>Bonnici <span class="fas fa-futbol"></span></li>
+							<li></li>
+						</ul>
+						<ul class="w3-small w3-padding-16 w3-right w3-margin-right">
+							<li>Borg <span class="fas fa-futbol"></span></li>
+							<li>Cremona <span class="fas fa-futbol"></span> <span class="fas fa-futbol"></span></li>
+							<li>Mifsud <span class="fas fa-futbol"></span></li>
+							<li>Hess <span class="fas fa-circle" style="color: yellow;"></span></li>
+							<li>Vassallo <span class="fas fa-circle" style="color: yellow;"></span></li>
+						</ul>
+						
+					</div>
+					
+				</div>
+			</div>
+		</div> 
+		<!-- Start of Fixture card 2 -->
+		<div class="w3-third w3-padding">
+			<div class="w3-card w3-container w3-white">
+				<!-- Game Details date/time-->
+				<h6>S.F.A.L League Game</h6>
+				<h6>Thusday 19th September 2019</h6>
+				<h6 class="w3-small">8:00PM</h6>
+				<div class="w3-container w3-row">
+					<!-- Team A logo & name-->
+					<div class="w3-third">
+						<img src="images/team_logo180x180.png" style="width:100%" alt="White Walkers FC" />
+						<span>White Walkers FC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+					<!-- Score -->
+					<div class="w3-third w3-center">
+						<h1 style="font-size: 3vw;">VS</h1>
+					</div>
+					<!-- Team B logo & name-->
+					<div class="w3-third">
+						<img src="images/mighty_reds_fc.jpg" style="width:100%" alt="Filfla Lizards" />
+						<span>Fifla Lizards</span>
+						<ul class="w3-small w3-padding-16">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Start of Fixture card 3 -->
+		<div class="w3-third w3-padding">
+			<div class="w3-card w3-container">
+				<!-- Game Details date/time-->
+				<h6>S.F.A.L League Game</h6>
+				<h6>Thusday 3rd October 2019</h6>
+				<h6 class="w3-small">9:10PM</h6>
+				<div class="w3-container w3-row">
+					<!-- Team A logo & name-->
+					<div class="w3-third">
+						<img src="images/Southampton1505465019002.png" style="width:100%" alt="La Famiglia AFC" /><br />
+						<span>La Famiglia AFC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+					<!-- Score -->
+					<div class="w3-third w3-center">
+						<h1 style="font-size: 3vw;">VS</h1>
+					</div>
+					<!-- Team B logo & name-->
+					<div class="w3-third">
+						<img src="images/team_logo180x180.png" style="width:100%" alt="White Walkers FC" />
+						<span>White Walkers FC</span>
+						<ul class="w3-small w3-padding-16" style="list-style-type:none;">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of fixture card 3 -->
+	</div><!--End of mobile testing 1st row-->
+	
+	
+	
+  </div>
+
+  <!-- Table section -->
+  <div class="w3-container w3-text-light-grey w3-padding-32" style="background-color:rgb(3, 11, 84);" id="table">
+    <div class="w3-content w3-margin-bottom" style="max-width:1000px">
+      <h1 class="w3-center"><b>LEAGUE TABLE</b></h1>
+	  <h5 class="w3-center"><b>S.F.A.L 1st Division</b></h5>
+		<div class="w3-responsive w3-container w3-padding-16">
+			<table class="w3-table w3-border w3-bordered w3-hoverable">
+				<tr class="w3-light-grey">
+					<th>Pos</th>
+					<th>Team</th>
+					<th>Played</th>
+					<th class="w3-hide-small">Wins</th>
+					<th class="w3-hide-small">Draws</th>
+					<th class="w3-hide-small">Loss</th>
+					<th class="w3-hide-small">GF</th>
+					<th class="w3-hide-small">GA</th>
+					<th>GD</th>
+					<th>Points</td>
+				</tr>
+				<tr class="w3-hover-text-black">
+					<td>1</td>
+					<td>White Walkers FC</td>
+					<td>1</td>
+					<td class="w3-hide-small">1</td>
+					<td class="w3-hide-small">0</td>
+					<td class="w3-hide-small">0</td>
+					<td class="w3-hide-small">4</td>
+					<td class="w3-hide-small">1</td>
+					<td>3</td>
+					<td>3</td>
+				</tr>
+				<tr class="w3-hover-text-black">
+					<td>2</td>
+					<td>La Famiglia AFC</td>
+					<td>1</td>
+					<td class="w3-hide-small">1</td>
+					<td class="w3-hide-small">0</td>
+					<td class="w3-hide-small">0</td>
+					<td class="w3-hide-small">4</td>
+					<td class="w3-hide-small">2</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+				<tr class="w3-hover-text-black">
+					<td>3</td>
+					<td>Golden Lions FC</td>
+					<td>1</td>
+					<td class="w3-hide-small">1</td>
+					<td class="w3-hide-small">0</td>
+					<td class="w3-hide-small">0</td>
+					<td class="w3-hide-small">6</td>
+					<td class="w3-hide-small">4</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+				<tr class="w3-hover-text-black">
+					<td>4</td>
+					<td>Sunrise FC</td>
+					<td>1</td>
+					<td class="w3-hide-small">1</td>
+					<td class="w3-hide-small">0</td>
+					<td class="w3-hide-small">0</td>
+					<td class="w3-hide-small">5</td>
+					<td class="w3-hide-small">4</td>
+					<td>1</td>
+					<td>3</td>
+				</tr>
+				<tr class="w3-hover-text-black">
+					<td>5</td>
+					<td>Versity AFC</td>
+					<td>1</td>
+					<td class="w3-hide-small">0</td>
+					<td class="w3-hide-small">0</td>
+					<td class="w3-hide-small">1</td>
+					<td class="w3-hide-small">3</td>
+					<td class="w3-hide-small">4</td>
+					<td>-1</td>
+					<td>0</td>
+				</tr>
+				<tr class="w3-hover-text-black">
+					<td>6</td>
+					<td>Ex Team</td>
+					<td>1</td>
+					<td class="w3-hide-small">0</td>
+					<td class="w3-hide-small">0</td>
+					<td class="w3-hide-small">1</td>
+					<td class="w3-hide-small">4</td>
+					<td class="w3-hide-small">6</td>
+					<td>-2</td>
+					<td>0</td>
+				</tr>
+				<tr class="w3-hover-text-black">
+					<td>7</td>
+					<td>Filfla Lizards</td>
+					<td>1</td>
+					<td class="w3-hide-small">0</td>
+					<td class="w3-hide-small">0</td>
+					<td class="w3-hide-small">1</td>
+					<td class="w3-hide-small">2</td>
+					<td class="w3-hide-small">4</td>
+					<td>-2</td>
+					<td>0</td>
+				</tr>
+				<tr class="w3-hover-text-black">
+					<td>8</td>
+					<td>Mighty Reds FC</td>
+					<td>1</td>
+					<td class="w3-hide-small">0</td>
+					<td class="w3-hide-small">0</td>
+					<td class="w3-hide-small">1</td>
+					<td class="w3-hide-small">1</td>
+					<td class="w3-hide-small">4</td>
+					<td>-3</td>
+					<td>0</td>
+				</tr>
+			</table>
+		</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-center w3-white">  
+    <img src="images/wpltd_180x180.png" style="width:20%;" class="w3-padding" alt="WPLtd Logo" />
+	<img src="images/street_fellows_pub.jpg" style="width:20%;" class="w3-padding" alt="Street Fellows Pub Logo" />
+	<img src="images/IMG_0100.jpg" style="width:20%;" class="w3-padding" alt="JonMifPhotography" />
+  </footer>
+  
+  <div class="w3-center w3-padding-24" style="background-color:rgb(160, 228, 251, 0.5);">Powered by <!--<a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">-->dougallwebdesign</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+//Script for Automatic Slideshow
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 10000); // Change image every 10 seconds
+}
+
+</script>
+
+
+</body>
+</html>
